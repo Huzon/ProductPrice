@@ -1,0 +1,15 @@
+<% if (brands) {%>
+    <div class="row">
+        <% brands.forEach(brands => { %>
+            <div class="coloumn">
+                <div class="card">
+                    <h2><spam><%= brands.id%> </spam><%= brands.name%></h2>
+                </div>
+            </div>
+            <% }); %>
+    </div>
+    <%}>
+<%else {%>
+    <h2>NO Brands available</h2>
+<%}>
+</div>

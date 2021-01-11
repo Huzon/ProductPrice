@@ -22,6 +22,11 @@ const con = mysql.createConnection({
 
 con.connect();
 
+let route = 'login';
+
+app.get(`${route}`, (req, res) => {
+    res.send(`${route}`);
+} );
 
 app.get("/", (req, res) => {
     con.query("SELECT * FROM brand", (err, rows, fields) => {
